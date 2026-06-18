@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,14 +19,8 @@ export default function Header() {
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="relative flex items-center justify-center w-8 h-8">
-            <div className="absolute border-t-[10px] border-l-[6px] border-r-[6px] border-t-white border-l-transparent border-r-transparent w-0 h-0 transform rotate-180 mb-2"></div>
-            <div className="absolute border-b-[10px] border-l-[6px] border-r-[6px] border-b-secondary border-l-transparent border-r-transparent w-0 h-0 transform -rotate-45 ml-2 mt-2"></div>
-          </div>
-          <span className="text-white text-xl font-bold leading-tight">
-            Remote<br/>Recruit
-          </span>
+        <div className="flex items-center">
+          <Logo />
         </div>
 
         {/* Desktop Nav */}

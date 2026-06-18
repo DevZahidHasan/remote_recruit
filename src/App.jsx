@@ -1,10 +1,11 @@
-import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import GlobalReach from './components/GlobalReach';
 import Features from './components/Features';
+import CTA from './components/CTA';
 import FAQ from './components/FAQ';
+import Pricing from './components/Pricing';
 import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -12,11 +13,13 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <GlobalReach />
         <Features />
+        <CTA />
         <FAQ />
+        <Pricing />
       </main>
       <Footer />
-      <ScrollToTop />
     </div>
   );
 }
